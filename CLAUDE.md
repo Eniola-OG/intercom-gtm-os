@@ -5,6 +5,7 @@ Intercom, renamed Fin in May 2026 and owned by Salesforce since 10 Sept 2026, se
 
 ## Files
 Root
+- `.mcp.json`: project MCP servers (Notion, https://mcp.notion.com/mcp)
 - `CLAUDE.md`: this map. `README.md`: what the repo is. `.gitignore`: keeps secrets, lead lists and local files out of Git. `.env`: local secrets, ignored and never committed
 
 Context
@@ -84,3 +85,4 @@ In `.claude/skills/` (from the GTM Starter Kit). Paths like `knowledge-base/...`
 - In `tools/`: rex (unofficial Clay API client), crawl4ai (site crawler to Markdown), agent-browser (browser automation)
 - Claude Code, VS Code, Git and GitHub (repo: https://github.com/Eniola-OG/intercom-gtm-os)
 - GTM stack: Clay (account not set up yet)
+- Notion: read-only mirror of `context/` and `output/` (not research) at "intercom GTM OS" (https://app.notion.com/p/416455fbc30781c2b31ee342f1111399). GitHub is the source of truth; re-sync after changing a mirrored file
