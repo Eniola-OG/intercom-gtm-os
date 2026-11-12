@@ -26,6 +26,7 @@ Context
 - `context/brand-kit/brand.md`: tone of voice and exact key phrases from Fin's own copy
 
 Output
+- `output/campaigns/campaign-strategy.md`: 19 ranked campaign ideas with mother intent, signal, angle, volume band, difficulty and tier
 - `output/campaigns/hiring-support-agents-in-bulk/workflow-spec.md`: workflow spec for W1, STRUCTURE-APPROVED, copy pending
 
 Knowledge base (from the GTM Starter Kit)
