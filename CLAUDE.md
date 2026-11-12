@@ -8,6 +8,7 @@ Intercom, renamed Fin in May 2026 and owned by Salesforce since 10 Sept 2026, se
 - `context/icp/icp.md`: ICP in five layers plus not a fit and open questions
 - `context/icp/personas.md`: champion, economic buyer, influencer
 - `context/icp/signal-matrix.md`: segments by persona with angles, signals scored on the four tests, top four to build, workflow tracker
+- `context/docs/gtm-system.md`: outbound system end to end, with tools, decisions, the weekly feedback loop and the four-pillar check
 
 ## How this folder works
 - `.claude/skills/`: project-specific skills. Read when a task matches a skill.
