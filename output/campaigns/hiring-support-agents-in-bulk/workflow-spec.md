@@ -1,6 +1,6 @@
 # Workflow Spec: Hiring support agents in bulk
 
-**Status:** STRUCTURE-APPROVED 2026-11-12 · copy pending
+**Status:** STRUCTURE-APPROVED 2026-11-12 · COPY-APPROVED 2026-11-12 · second review edits 2026-11-12
 
 - Workflow W1 in `context/icp/signal-matrix.md` Matrix 3 (signal #1, scored 19/20). This run targets segment S2 (self-serve B2B SaaS).
 - Built with `/build-workflow-spec` from `context/icp/icp.md`, `personas.md`, `signal-matrix.md`, `context/docs/gtm-system.md` and `context/docs/research/`.
@@ -136,3 +136,131 @@ Nothing outside this table may appear in copy.
 - [x] Cadence and channel declared
 
 **Next:** `/campaign-copy` on this file. It creates `context/messaging/facts.md` first.
+
+---
+
+## Copy
+
+Facts source: `context/messaging/facts.md` (approved 2026-11-12). Variables: only those in section 6. Register: signal play.
+
+**Subject (static, kept for the whole thread):** `{support hiring question|before the next support hire|a support team question}`
+
+### Email 1 (day 1, new thread). Approved 2026-11-12
+
+```
+{{first_name}},
+
+{{company_name}} is hiring for several support roles right now, including a {{example_role_title}}.
+
+{My guess is|Could be off, but my guess is} support volume is growing {faster than the team|ahead of the team}, and hiring is how you're keeping pace.
+
+{{e1l3}}
+
+{{social_proof}}
+
+{Worth testing Fin on a sample of your own conversations before the next hire?|Would a test on a sample of your own conversations help before the next hire?}
+
+{{sender_name}}
+{{sender_title}}
+```
+
+**`{{e1l3}}` (value prop).** Routes are exhaustive, so there's no fallback.
+- + helpdesk_route = zendesk AND ai_agent_present = false (C1): no line. The proof line carries it.
+- + helpdesk_route = zendesk AND ai_agent_present = true (C2): Fin is an AI agent that resolves support conversations on top of Zendesk, keeping Zendesk as your system of record.
+- + helpdesk_route = hubspot (C3, C4): Fin is an AI agent that resolves support conversations on top of HubSpot, keeping HubSpot as your system of record.
+- + helpdesk_route = none_detected (C5, C6): Fin is an AI agent that resolves support conversations on the helpdesk you already run, with no migration.
+
+**`{{social_proof}}`.** Routes are exhaustive, so there's no fallback.
+- + ai_agent_present = true (C2, C4, C6): You already have an AI agent on your site, so the closest comparison is Vanta: on 400 real conversations, Fin resolved about 73%, its existing agent about 49%.
+- + helpdesk_route = zendesk AND ai_agent_present = false (C1): Lightspeed runs Fin, an AI agent, on Zendesk, and 72% of the conversations Fin handles are resolved without a person.
+- + helpdesk_route = hubspot AND ai_agent_present = false (C3): Fin's published average resolution rate is 76% across 12,000+ customers.
+- + helpdesk_route = none_detected AND ai_agent_present = false (C5): Vanta started Fin on the ticketing system it already had, before changing anything else.
+
+Word counts: C1 66, C2 93, C3 75, C4 93, C5 78, C6 92.
+
+**Sample (C1), as received:**
+
+> **Subject:** before the next support hire
+>
+> Sam,
+>
+> Acme is hiring for several support roles right now, including a Customer Support Specialist.
+>
+> My guess is support volume is growing faster than the team, and hiring is how you're keeping pace.
+>
+> Lightspeed runs Fin, an AI agent, on Zendesk, and 72% of the conversations Fin handles are resolved without a person.
+>
+> Worth testing Fin on a sample of your own conversations before the next hire?
+>
+> Gbadamosi Eniola
+> GTM
+
+("Sam" and "Acme" are made-up names to show the rendering.)
+
+### Email 2 (day 4, same thread, subject "Re:"). Approved 2026-11-12
+
+Static for every cell. Spintax on the opener and CTA only.
+
+```
+{{first_name}},
+
+{One more thought|Another thought} on the support hiring at {{company_name}}, this time on cost.
+
+Fin is priced at $0.99 per outcome, and you're not charged when a conversation is simply passed to your team.
+
+Synthesia handled more than 275k additional monthly queries with the same headcount.
+
+{Would it help to see what that looks like against your own volume?|Useful to see that against your own volume?}
+
+{{sender_name}}
+{{sender_title}}
+```
+
+Word count: 61. New value vs Email 1: cost and headcount (Email 1 was about resolution).
+
+### Email 3 (day 10, same thread, subject "Re:"). Approved 2026-11-12
+
+Static for every cell. A final touch with a referral CTA.
+
+```
+{{first_name}},
+
+{Last note from me on this.|I'll leave it here after this one.}
+
+Fin works 24 hours a day, every day, so the people you're hiring can spend their time on the conversations that need a person.
+
+{If someone else at {{company_name}} owns support tooling, who should I talk to?|Is someone else at {{company_name}} the right person for support tooling?}
+
+{{sender_name}}
+{{sender_title}}
+```
+
+Word count: 41. New value vs Emails 1 and 2: around-the-clock coverage, plus the referral ask.
+
+### LinkedIn. Approved 2026-11-12
+
+**Connection request (day 2):** empty, no note.
+
+**DM 1 (if accepted, about day 7).** Routes are exhaustive, so there's no fallback.
+- + ai_agent_present = true (C2, C4, C6): {{first_name}}, with the support roles you're hiring for, is the plan to grow your AI agent's share of conversations too, or mostly the team?
+- + ai_agent_present = false (C1, C3, C5): {{first_name}}, with the support roles you're hiring for, is AI part of the support plan, or is it mostly team growth for now?
+
+**DM 2 (3 to 5 days after DM 1, if there's no reply).** Static. It uses Personio, so no lead sees the same proof by email and LinkedIn.
+
+```
+{Asking because|Reason I ask:} Personio has Fin resolving 30k support conversations a month. {Happy to show what that could look like at your volume if useful.|Can share what that might look like at your volume if that helps.}
+```
+
+### Persona review and human test. Done 2026-11-12
+
+Reviewed as a Director of Customer Support at a self-serve SaaS company that is hiring 3+ support roles. One change: the Email 1 proof line for C2, C4 and C6 was reworded for clarity ("Fin resolved about 73%, the existing agent about 49%"). Facts unchanged. Before launch: a final manual read against `knowledge-base/playbooks/copy-iron-laws.md`, then `/campaign-qa`.
+
+### Second persona review and human test. Done 2026-11-12
+
+Six fixes, all wording only. Facts and routes are unchanged.
+1. Email 1 opener: dropped the repeated "role" ("is hiring for several support roles right now, including a {{example_role_title}}").
+2. Email 1 C1 proof: "Fin conversations" became "the conversations Fin handles".
+3. Email 1 C2, C4, C6 proof: now says why Vanta's test matters ("You already have an AI agent on your site, so the closest comparison is Vanta"). This uses the `ai_agent_present` read that defines these cells.
+4. Email 1 C3 proof: added "resolution rate" so the 76% is clear.
+5. Email 2 opener: "One more thought on the support hiring at {{company_name}}, this time on cost."
+6. DM 1, AI-agent cells: "the AI agent's share" became "your AI agent's share".
