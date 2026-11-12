@@ -1,0 +1,81 @@
+{
+  "title": "intercom GTM System: Fin outbound, end to end",
+  "subtitle": "Drawn from context/docs/gtm-system.md. Public portfolio project, not an Intercom or Fin campaign. Clay, Instantly, HeyReach and Salesforce are proposed, not set up yet. Row 1 reads left to right, row 2 right to left, row 3 left to right.",
+  "rows": [
+    {
+      "title": "Find and qualify accounts (steps 0 to 5)",
+      "direction": "ltr",
+      "columns": ["1A", "1B", "1C", "1D", "1E", "1F", "1G", "1H"]
+    },
+    {
+      "title": "Find people and send (steps 6 to 8)",
+      "direction": "rtl",
+      "columns": ["2A", "2B", "2C", "2D", "2E", "2F"]
+    },
+    {
+      "title": "Replies, CRM and the weekly loop (steps 9 to 11)",
+      "direction": "ltr",
+      "columns": ["3A", ["o1", "o2", "o3", "o4", "o5", "o6", "o7"], ["a1", "a2", "a3", "a4", "a5", "a6", "a7"], "3B", "3C"]
+    }
+  ],
+  "nodes": {
+    "1A": {"kind": "start", "title": "Context OS", "sub": "ICP, personas, signal matrix, approved workflow spec, facts.md", "tools": ["claude_code", "github"], "w": 320},
+    "1B": {"kind": "step", "title": "Buying signals", "sub": ["W1 Hiring support agents in bulk", "W2 Hiring AI-support roles", "W3 New support leader", "W4 Multilingual or new-region support"], "tools": ["clay"], "w": 330},
+    "1C": {"kind": "step", "title": "Find companies", "sub": "One row per domain, dedupe across W1 to W4", "tools": ["clay"]},
+    "1D": {"kind": "decision", "title": "Suppressed?"},
+    "supp": {"kind": "exit", "title": "Drop: do-not-contact or touched in 90 days", "below": "1D", "w": 260},
+    "1E": {"kind": "step", "title": "Enrich", "sub": ["Firmographics, funding", "Helpdesk widget", "AI-agent widget", "Last round, headcount growth"], "tools": ["clay"], "w": 290},
+    "1F": {"kind": "decision", "title": "On Intercom?"},
+    "cust": {"kind": "exit", "title": "Drop: likely a customer", "below": "1F"},
+    "1G": {"kind": "decision", "title": "ICP fit?"},
+    "icpx": {"kind": "exit", "title": "Fail: drop, reason logged. Unknown: hold 30 days", "below": "1G", "w": 260},
+    "1H": {"kind": "step", "title": "Route by segment", "sub": ["Segment S1, S2 or S3", "Helpdesk: Zendesk, HubSpot, Freshdesk", "AI widget: detected or none"], "tools": ["clay"], "w": 320},
+
+    "2A": {"kind": "step", "title": "Find people", "sub": ["Champion: Head or VP of Support, CX", "Economic buyer: VP Ops, COO", "Influencer: RevOps, IS"], "tools": ["clay"], "w": 320},
+    "2B": {"kind": "decision", "title": "Anyone found?"},
+    "nobody": {"kind": "exit", "title": "Hold, re-run in 30 days", "below": "2B"},
+    "2C": {"kind": "step", "title": "Find and verify email", "sub": "Clay waterfall, then a verifier", "tools": ["clay"]},
+    "2D": {"kind": "decision", "title": "Email valid?"},
+    "li": {"kind": "exit", "title": "LinkedIn-only track", "below": "2D"},
+    "2E": {"kind": "decision", "title": "Passed QA?"},
+    "qa": {"kind": "exit", "title": "Fix and re-run /campaign-qa", "below": "2E"},
+    "2F": {"kind": "step", "title": "Sequence", "sub": ["Day 1 Email 1: signal and angle", "Day 2 LinkedIn connect", "Day 4 Email 2: helpdesk route", "Day 7 LinkedIn DM", "Day 10 Email 3: soft close"], "tools": ["Instantly", "HeyReach"], "w": 320},
+
+    "3A": {"kind": "step", "title": "Reply handling", "sub": "One label per reply within one business day. Out of office: pause", "tools": ["Instantly", "HeyReach"], "w": 280},
+    "o1": {"kind": "branch", "title": "Meeting request", "h": 80},
+    "o2": {"kind": "branch", "title": "Objection", "h": 80},
+    "o3": {"kind": "branch", "title": "Not now", "h": 80},
+    "o4": {"kind": "branch", "title": "Wrong person", "h": 80},
+    "o5": {"kind": "branch", "title": "Already a customer", "h": 80},
+    "o6": {"kind": "branch", "title": "Unsubscribe or hostile", "h": 80},
+    "o7": {"kind": "branch", "title": "No reply after last touch", "h": 80},
+    "a1": {"kind": "step", "title": "Book meeting, create opportunity", "w": 320, "h": 80},
+    "a2": {"kind": "step", "title": "Answer from the objection list", "w": 320, "h": 80},
+    "a3": {"kind": "step", "title": "Nurture with Fin Blueprint content", "w": 320, "h": 80},
+    "a4": {"kind": "exit", "title": "Referral: back to 2C. Else next persona, 2A", "w": 320, "h": 80},
+    "a5": {"kind": "exit", "title": "Suppress, pass to account team", "w": 320, "h": 80},
+    "a6": {"kind": "exit", "title": "Suppress on every channel", "w": 320, "h": 80},
+    "a7": {"kind": "exit", "title": "Close, re-enter only on a new signal", "w": 320, "h": 80},
+    "3B": {"kind": "step", "title": "CRM", "sub": ["Signal source W1 to W4", "Route ID and persona", "Status and fail reason"], "tools": ["Salesforce"], "w": 260},
+    "3C": {"kind": "start", "title": "Weekly review", "sub": "Reply and meeting rate by signal and route, fail reasons, objections, Clay spend", "tools": ["claude_code"], "w": 320, "align": "bottom"}
+  },
+  "edges": [
+    ["1A", "1B"], ["1B", "1C"], ["1C", "1D"],
+    ["1D", "1E", "No"], ["1D", "supp", "Yes"],
+    ["1E", "1F"],
+    ["1F", "1G", "No"], ["1F", "cust", "Yes"],
+    ["1G", "1H", "Pass"], ["1G", "icpx", "Fail"],
+    ["1H", "2A"],
+    ["2A", "2B"],
+    ["2B", "2C", "Yes"], ["2B", "nobody", "No"],
+    ["2C", "2D"],
+    ["2D", "2E", "Yes"], ["2D", "li", "No"],
+    ["2E", "2F", "Yes"], ["2E", "qa", "No"],
+    ["2F", "3A"],
+    ["3A", "o1"], ["3A", "o2"], ["3A", "o3"], ["3A", "o4"], ["3A", "o5"], ["3A", "o6"], ["3A", "o7"],
+    ["o1", "a1"], ["o2", "a2"], ["o3", "a3"], ["o4", "a4"], ["o5", "a5"], ["o6", "a6"], ["o7", "a7"],
+    ["a1", "3B"],
+    ["3B", "3C"]
+  ],
+  "loop": {"from": "3C", "to": "1A", "label": "Weekly loop: results update the Context OS"}
+}

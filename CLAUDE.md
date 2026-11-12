@@ -30,6 +30,9 @@ Output
 - `output/campaigns/campaign-strategy.md`: 19 ranked campaign ideas with mother intent, signal, angle, volume band, difficulty and tier
 - `output/campaigns/hiring-support-agents-in-bulk/workflow-spec.md`: workflow spec for W1 with the full copy (3 emails, 2 LinkedIn DMs), COPY-APPROVED
 
+Diagrams
+- `diagrams/gtm-system.json` and `gtm-system.svg`: flowchart spec and layout for gtm-system.md, drawn on the Miro board "intercom GTM System" (https://miro.com/app/board/uXjVEO-4bOI=/)
+
 Knowledge base (from the GTM Starter Kit)
 - `knowledge-base/playbooks/signal-matrix-framework.md`: method for segment and signal matrices
 - `knowledge-base/playbooks/workflow-anatomy.md`: workflow layers and the Mother Intent Catalog

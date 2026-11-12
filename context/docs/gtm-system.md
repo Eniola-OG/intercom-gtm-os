@@ -4,6 +4,7 @@ The end-to-end outbound system, from signal to CRM and back into the Context OS.
 - Built from `context/icp/icp.md`, `personas.md` and `signal-matrix.md`. Citations look like `signal-matrix.md #1`.
 - **Tool status:** "Live" means it is in the repo and usable. "Proposed" means it hasn't been chosen or set up yet (CLAUDE.md Tools lists only Clay, rex, crawl4ai and agent-browser, and Clay isn't set up yet).
 - **Settings marked "start at"** are starting values to tune in the weekly loop. They are not research facts.
+- **Visual version:** [intercom GTM System on Miro](https://miro.com/app/board/uXjVEO-4bOI=/), drawn from this file with `/miro-gtm-flowchart`. Source spec: `diagrams/gtm-system.json`.
 
 ## Flow at a glance
 
