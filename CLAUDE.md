@@ -3,13 +3,45 @@
 ## Company
 Intercom, renamed Fin in May 2026 and owned by Salesforce since 10 Sept 2026, sells the Fin AI Agent ($0.99 per outcome, runs on any helpdesk) and the Intercom helpdesk to 30,000+ companies, mostly software, fintech and AI businesses (sources: `context/docs/research/company.md` C1, C3, C7, C9).
 
-## Key files
-- `context/docs/research/`: company.md, customers.md, competitors.md, market.md, signals.md, voice.md (raw research, every fact sourced)
+## Files
+Root
+- `CLAUDE.md`: this map. `README.md`: what the repo is. `.gitignore`: keeps secrets, lead lists and local files out of Git. `.env`: local secrets, ignored and never committed
+
+Context
+- `context/docs/research/company.md`: what Fin sells, pricing, scale, funding, team, leadership
+- `context/docs/research/customers.md`: named customers, results, case studies, quotes
+- `context/docs/research/competitors.md`: competing vendors and how each positions itself
+- `context/docs/research/market.md`: regulation and market changes that create urgency
+- `context/docs/research/signals.md`: public evidence of what makes a company need Fin now
+- `context/docs/research/voice.md`: how Fin and Intercom describe themselves, in their own words
 - `context/icp/icp.md`: ICP in five layers plus not a fit and open questions
 - `context/icp/personas.md`: champion, economic buyer, influencer
 - `context/icp/signal-matrix.md`: segments by persona with angles, signals scored on the four tests, top four to build, workflow tracker
 - `context/docs/gtm-system.md`: outbound system end to end, with tools, decisions, the weekly feedback loop and the four-pillar check
+- `context/positioning/value-proposition.md`: job, pain, gain and proof for each persona
+- `context/positioning/positioning.md`: category, target customer, current alternatives, unique value, proof, positioning statement
+- `context/positioning/competitors.md`: main competitors, where Fin wins and loses, how to respond
+- `context/messaging/messaging.md`: core message, four pillars with proof, persona angles, words to use and avoid
+- `context/docs/case-studies.md`: every customer story found, with size, industry, problem, result, quote and source
+- `context/brand-kit/brand.md`: tone of voice and exact key phrases from Fin's own copy
+
+Output
 - `output/campaigns/hiring-support-agents-in-bulk/workflow-spec.md`: workflow spec for W1, STRUCTURE-APPROVED, copy pending
+
+Knowledge base (from the GTM Starter Kit)
+- `knowledge-base/playbooks/signal-matrix-framework.md`: method for segment and signal matrices
+- `knowledge-base/playbooks/workflow-anatomy.md`: workflow layers and the Mother Intent Catalog
+- `knowledge-base/playbooks/copy-frameworks.md`, `copy-iron-laws.md`, `copy-bans.yaml`, `linkedin-dm-frameworks.md`: copy rules and frameworks
+- `knowledge-base/playbooks/clay/`: `actions-data-credits.md`, `expert.md`, `formulas.md`, `iron-laws.md`, `prompts.md` (Clay how-tos)
+- `knowledge-base/playbooks/templates/facts-template.md`: template for `context/messaging/facts.md`
+- `knowledge-base/learnings/`: empty until the first campaign runs
+
+Tracking
+- `weekly-priorities/2026-W46.md`: this week's steps and their status
+- `work-log/2026-W46.md`: everything done this week
+- `meetings/`: empty
+
+Skills and tools: see the two sections below (18 skill folders in `.claude/skills/`, 3 tools in `tools/`).
 
 ## How this folder works
 - `.claude/skills/`: project-specific skills. Read when a task matches a skill.
