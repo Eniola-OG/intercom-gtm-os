@@ -140,7 +140,7 @@ The same Clay builds serve every segment. Only the keywords, the proof and the a
 
 | W # | Status | Workflow name | Mother intent | Segment | Persona | Enrichments | Channel | Launch date | Clay URL | Copy URL | Total leads | Bounce |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| W1 | Planned | Hiring support agents | Hiring specific roles | S2, S1, S3 | Champion, then economic buyer | #7, #8, #5, #6 | | | | | | |
+| W1 | Spec approved 2026-11-12 (output/campaigns/hiring-support-agents-in-bulk/workflow-spec.md) | Hiring support agents | Hiring specific roles | S2, S1, S3 | Champion, then economic buyer | #7, #8, #5, #6 | | | | | | |
 | W2 | Planned | Hiring AI-support roles | Hiring specific roles | S2, S1, S3 | Champion, influencer | #7, #8 | | | | | | |
 | W3 | Planned | New support leader (90 days) | New leadership | S2, S1, S3 | Champion | #7, #8, #5 | | | | | | |
 | W4 | Planned | Hiring multilingual support | Hiring specific roles | S2, S1, S3 | Champion | #7, #6 | | | | | | |
