@@ -1,7 +1,12 @@
 # Intercom GTM Context OS
 
 ## Company
-Intercom: TBD, fill in after research (cite source).
+Intercom, renamed Fin in May 2026 and owned by Salesforce since 10 Sept 2026, sells the Fin AI Agent ($0.99 per outcome, runs on any helpdesk) and the Intercom helpdesk to 30,000+ companies, mostly software, fintech and AI businesses (sources: `context/docs/research/company.md` C1, C3, C7, C9).
+
+## Key files
+- `context/docs/research/`: company.md, customers.md, competitors.md, market.md, signals.md, voice.md (raw research, every fact sourced)
+- `context/icp/icp.md`: ICP in five layers plus not a fit and open questions
+- `context/icp/personas.md`: champion, economic buyer, influencer
 
 ## How this folder works
 - `.claude/skills/`: project-specific skills. Read when a task matches a skill.
