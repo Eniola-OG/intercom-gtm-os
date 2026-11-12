@@ -135,7 +135,7 @@ Nothing outside this table may appear in copy.
 - [x] Engine/ICP markers on every section
 - [x] Cadence and channel declared
 
-**Next:** `/campaign-copy` on this file. It creates `context/messaging/facts.md` first.
+**Next:** copy is approved (see Copy below). Next step is `/campaign-contract` to write the Clay build sheet, once Clay is set up.
 
 ---
 
