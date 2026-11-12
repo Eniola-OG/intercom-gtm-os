@@ -4,3 +4,15 @@
 *.xlsx
 .DS_Store
 .claude/settings.local.json
+!.env.example
+
+# tool secrets and local data (from the starter kit tools)
+clay-session.json
+.treg/
+
+# python and node
+.venv/
+venv/
+__pycache__/
+*.pyc
+node_modules/

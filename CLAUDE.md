@@ -26,4 +26,16 @@ Intercom: TBD, fill in after research (cite source).
 - Log every change in this week's work log (`work-log/YYYY-Www.md`).
 - This is a public repo built from public sources only. I do not work at Intercom, so nothing is "Source: internal".
 
+## Skills
+In `.claude/skills/` (from the GTM Starter Kit). Paths like `knowledge-base/...` and `tools/...` resolve inside this repo.
+- Strategy: `/signal-matrix` (ICP and signal matrices), `/campaign-strategy` (15 to 25 ranked campaign ideas)
+- Workflow: `/build-workflow-spec` (structure, STRUCTURE-APPROVED), `/campaign-copy` (copy on an approved spec), `/campaign-contract` (Clay build sheet)
+- Clay build: `/design-clay-table-json`, `/import-clay-table`, `/build-clay`, `/prompt-builder`, `/save-clay-schema`
+- Clay cost and data: `/calculate-costs`, `/workspace-cost-audit`, `/export-tables`
+- QA and deliverability: `/campaign-qa`, `/inbox-placement-test`
+- Research and visuals: `/crawl4ai`, `/agent-browser`, `/miro-gtm-flowchart`
+
 ## Tools
+- In `tools/`: rex (unofficial Clay API client), crawl4ai (site crawler to Markdown), agent-browser (browser automation)
+- Claude Code, VS Code, Git and GitHub (repo: https://github.com/Eniola-OG/intercom-gtm-os)
+- GTM stack: Clay (account not set up yet)
