@@ -22,12 +22,13 @@ Context
 - `context/positioning/positioning.md`: category, target customer, current alternatives, unique value, proof, positioning statement
 - `context/positioning/competitors.md`: main competitors, where Fin wins and loses, how to respond
 - `context/messaging/messaging.md`: core message, four pillars with proof, persona angles, words to use and avoid
+- `context/messaging/facts.md`: the only source of names, claims and numbers allowed in outbound copy, plus banned angles and the sender
 - `context/docs/case-studies.md`: every customer story found, with size, industry, problem, result, quote and source
 - `context/brand-kit/brand.md`: tone of voice and exact key phrases from Fin's own copy
 
 Output
 - `output/campaigns/campaign-strategy.md`: 19 ranked campaign ideas with mother intent, signal, angle, volume band, difficulty and tier
-- `output/campaigns/hiring-support-agents-in-bulk/workflow-spec.md`: workflow spec for W1, STRUCTURE-APPROVED, copy pending
+- `output/campaigns/hiring-support-agents-in-bulk/workflow-spec.md`: workflow spec for W1 with the full copy (3 emails, 2 LinkedIn DMs), COPY-APPROVED
 
 Knowledge base (from the GTM Starter Kit)
 - `knowledge-base/playbooks/signal-matrix-framework.md`: method for segment and signal matrices
