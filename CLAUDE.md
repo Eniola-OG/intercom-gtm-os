@@ -17,6 +17,7 @@ Context
 - `context/docs/research/voice.md`: how Fin and Intercom describe themselves, in their own words
 - `context/icp/icp.md`: ICP in five layers plus not a fit and open questions
 - `context/icp/personas.md`: champion, economic buyer, influencer
+- `context/icp/exclusion-list.md`: who we never approach (hard filters, not-a-fit, suppression), with sources
 - `context/icp/signal-matrix.md`: segments by persona with angles, signals scored on the four tests, top four to build, workflow tracker
 - `context/docs/gtm-system.md`: outbound system end to end, with tools, decisions, the weekly feedback loop and the four-pillar check
 - `context/positioning/value-proposition.md`: job, pain, gain and proof for each persona
