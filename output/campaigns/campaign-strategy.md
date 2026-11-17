@@ -52,7 +52,7 @@ All published in case-studies.md.
 | 4 | **Fin for Sales: hiring inbound SDRs** (Creative non-ICP) | Focused | Hiring specific roles | S2, a new persona: demand generation or sales leader | Inbound SDR or BDR job posts; Clay Find Jobs | Qualify and book inbound leads 24/7 before adding reps | Medium: SDR posts are common (INFERRED) | Medium: new persona, thin proof (Fellow only) | 4 | 5 | **Tier 2**: new persona, one proof point |
 | 5 | **Champion migration** | Niche | Champion migration | Any segment, champion | People named in Fin case studies who change company; Clay job change tracking | You ran Fin at your last company | Very low: a few dozen named people | Medium | 5 | 3 | **Tier 2**: best signal, tiny list |
 | 6 | **24/7 and night-shift support hiring** | Niche | Hiring specific roles (job description parsing) | S2, S3, champion | Support posts that mention "24/7", "night shift", "weekend" or "overnight"; Clay Find Jobs plus a regex on the description | Fin "works 24 hours a day, every day" (voice.md V2) | Medium (INFERRED) | Low to medium | 4 | 4 | **Tier 1**: same build as #1, sharp story |
-| 7 | **New support leader (last 90 days)** (New Hire) | Focused | New leadership (past 90 days) | S2, S1, S3, champion | Head, Director or VP of Support or CX with a start date under 90 days; Clay Find People | A quick win in your first quarter | Medium (signal-matrix.md #3) | Medium: start dates can lag | 4 | 4 | **Tier 1**: reliable titles, reaches the champion directly |
+| 7 | **New support leader (last 365 days)** (New Hire) | Focused | New leadership (past 365 days) | S2, S1, S3, champion | Head, Director or VP of Support or CX with a start date under 365 days; Clay Find People | A quick win in your first quarter | Medium (signal-matrix.md #3) | Medium: start dates can lag | 4 | 4 | **Tier 1**: reliable titles, reaches the champion directly |
 | 8 | **Hiring multilingual or new-region support** | Niche | Hiring specific roles | S2, S3, champion | Support posts with language or new-country keywords; Clay Find Jobs | Cover new languages without new hires (Topstep, Lightspeed) | Low | Low (reuses #1) | 4 | 4 | **Tier 1**: near-free variant of #1 |
 | 9 | **Recently funded (Series B or later, last 90 days)** | Focused | Fundraising | S1, S2, economic buyer | Crunchbase via Clay | Growth without support cost growing at the same pace | Medium (INFERRED) | Low | 3 | 5 | **Tier 2**: easy data, weaker link to buying |
 | 10 | **Big support team, no AI-support role** | Niche | Have or don't have specific team | S2, economic buyer | 10+ people with support titles and no AI-support or automation title (a reliable title check, not a tech check); Clay Find People count | "Your team of N" set against what Synthesia handles with the same headcount | Medium (INFERRED) | Medium | 3 | 4 | **Tier 2**: Golden ICP style, needs a careful count |
@@ -115,7 +115,7 @@ Value proposition categories: make money, save time, save money, mitigate risk.
    - Same Clay build as #1, plus a regex on the description.
 7. **New support leader**
    - Value: save time.
-   - Acknowledge the new role.
+   - Acknowledge the new role, only for "New in role" (0 to 180 days). "First year" (181 to 365 days) gets the angle without the new-role opener.
    - Angle: a quick result in the first quarter. Lightspeed's early resolution went from 20% to "over 70%".
    - No people search needed, since the leader from the signal is the contact.
    - INFERRED: that new leaders review tools early comes from the framework, not the research.

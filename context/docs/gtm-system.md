@@ -60,14 +60,14 @@ The end-to-end outbound system, from signal to CRM and back into the Context OS.
 |---|---|---|---|
 | W1 | Hiring support agents in bulk (signal-matrix.md #1) | Find Jobs at Company; Apify for boards Clay misses | Weekly |
 | W2 | Hiring AI-support or CX-automation roles (#2) | Find Jobs at Company | Weekly |
-| W3 | New support leader in the last 90 days (#3) | Find People at Company, by title and start date | Monthly |
+| W3 | New support leader in the last 365 days (#3), labelled "New in role" (0 to 180) or "First year" (181 to 365) | Find People at Company, by title and start date | Monthly |
 | W4 | Hiring multilingual or new-region support (#4) | Find Jobs at Company, language or location keywords | Weekly |
 
 | Decision | Answer leads to |
 |---|---|
 | Does the job or person match the title keywords in signal-matrix.md? | **Yes:** new row moves to step 2. **No:** discarded by a Clay filter |
 | W1 only: does the company have at least the starting threshold of open support roles (start at 3, signal-matrix.md #1)? | **Yes:** continue. **No:** stay in the table and re-check next week, since the count may rise |
-| Is the signal older than its window (30 days for jobs, 90 days for leaders)? | **Yes:** drop, because the timing hook is gone. **No:** continue |
+| Is the signal older than its window (30 days for jobs, 365 days for leaders)? | **Yes:** drop, because the timing hook is gone. **No:** continue |
 
 ## Step 2: Find companies
 

@@ -45,7 +45,7 @@ Knowledge base (from the GTM Starter Kit)
 
 Tracking
 - `weekly-priorities/2026-W46.md`: this week's steps and their status
-- `work-log/2026-W46.md`: everything done this week
+- `work-log/2026-W46.md`: everything done in week 46. `work-log/2026-W47.md`: everything done this week
 - `meetings/`: empty
 
 Skills and tools: see the two sections below (18 skill folders in `.claude/skills/`, 3 tools in `tools/`).
