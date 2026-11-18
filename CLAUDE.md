@@ -31,6 +31,7 @@ Context
 Output
 - `output/campaigns/campaign-strategy.md`: 19 ranked campaign ideas with mother intent, signal, angle, volume band, difficulty and tier
 - `output/campaigns/hiring-support-agents-in-bulk/workflow-spec.md`: workflow spec for W1 with the full copy (3 emails, 2 LinkedIn DMs), COPY-APPROVED
+- `output/campaigns/hiring-support-agents-in-bulk/hiring-support-agents-in-bulk-clay-build-guide.md`: step-by-step Clay build guide for W1 (4 tables, Parts 0 to 12), with the flow diagram (`-clay-flow.png`, `.html`, `.json`) next to it
 
 Diagrams
 - `diagrams/gtm-system.json` and `gtm-system.svg`: flowchart spec and layout for gtm-system.md, drawn on the Miro board "intercom GTM System" (https://miro.com/app/board/uXjVEO-4bOI=/)

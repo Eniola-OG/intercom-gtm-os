@@ -1,0 +1,33 @@
+{
+  "title": "How the W1 hiring workflow moves through Clay",
+  "subtitle": "Each row is a table. Follow the numbers left to right. Paid steps only run on rows that passed every step before them.",
+  "lanes": [
+    {"id": "excl", "name": "Exclusions", "note": "you upload it", "dashed": true},
+    {"id": "jobs", "name": "Support Jobs", "note": "one row per\njob post"},
+    {"id": "co", "name": "Companies", "note": "one row per company.\nChecks and routing.", "main": true},
+    {"id": "ppl", "name": "Support Leaders", "note": "one row per person.\nEmails and copy."}
+  ],
+  "steps": [
+    {"id": "x", "n": "0", "lane": "excl", "col": 2, "title": "Never contact", "text": "Fin, Intercom, Salesforce and 9 competitors, by domain", "cost": null},
+    {"id": "s1", "n": "1", "lane": "jobs", "col": 1, "title": "Find support job posts", "text": "Support agent titles, last 30 days, US, UK, IE, EU, AU", "cost": "free"},
+    {"id": "s2", "n": "2", "lane": "jobs", "col": 2, "title": "Free job checks", "text": "Title matches, 30 days or less, company not excluded", "cost": "free"},
+    {"id": "s3", "n": "3", "lane": "co", "col": 3, "title": "Count posts per company", "text": "Each company once. Keep 3 or more support posts", "cost": "free"},
+    {"id": "s4", "n": "4", "lane": "co", "col": 4, "title": "Enrich company", "text": "HQ, size, industry, funding. Country, size, agency, funding checks", "cost": "paid"},
+    {"id": "s5", "n": "5", "lane": "co", "col": 5, "title": "Tech stack and segment", "text": "Intercom or Salesforce out. Helpdesk, AI agent, S2? (AI)", "cost": "paid"},
+    {"id": "s6", "n": "6", "lane": "co", "col": 6, "title": "Route to a cell", "text": "Helpdesk x AI agent = C1 to C6", "cost": "free", "highlight": true},
+    {"id": "s7", "n": "7", "lane": "ppl", "col": 7, "title": "Find support leaders", "text": "People search at the companies that passed", "cost": "free"},
+    {"id": "s8", "n": "8", "lane": "ppl", "col": 8, "title": "Pick the recipient", "text": "Champion first, else economic buyer. Company facts back", "cost": "free"},
+    {"id": "s9", "n": "9", "lane": "ppl", "col": 9, "title": "Email and copy", "text": "Find and verify the email, write the lines, paused sequencer", "cost": "paid"}
+  ],
+  "arrows": [
+    {"from": "s1", "to": "s2"},
+    {"from": "x", "to": "s2", "label": "checked against", "dashed": true},
+    {"from": "s2", "to": "s3"},
+    {"from": "s3", "to": "s4"},
+    {"from": "s4", "to": "s5"},
+    {"from": "s5", "to": "s6"},
+    {"from": "s6", "to": "s7", "label": "search only\npassing companies"},
+    {"from": "s7", "to": "s8"},
+    {"from": "s8", "to": "s9"}
+  ]
+}
